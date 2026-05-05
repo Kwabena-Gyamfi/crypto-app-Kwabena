@@ -3,18 +3,48 @@ import { Link, useNavigate } from "react-router-dom";
 import Container from "../components/common/Container";
 import Button from "../components/common/Button";
 import { setProfile } from "../utils/profile";
+import { apiFetch } from "../services/api";
 
 function SignUp() {
   const navigate = useNavigate();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setError("");
     const name = [firstName, lastName].filter(Boolean).join(" ").trim();
-    setProfile({ name, email });
-    navigate("/home");
+
+    if (!name || !email || !password) {
+      setError("Please provide your full name, email, and password.");
+      return;
+    }
+
+    if (password.length < 8) {
+      setError("Password must be at least 8 characters long.");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await apiFetch("/api/register", {
+        method: "POST",
+        credentials: "include",
+        body: { name, email, password },
+      });
+
+      setProfile({ name: response.user.name, email: response.user.email });
+      navigate("/home");
+    } catch (err: any) {
+      setError(err.message || "Registration failed. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -71,14 +101,21 @@ function SignUp() {
                 type="password"
                 placeholder="Create a strong password"
                 className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-500"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
               />
             </label>
+            {error ? (
+              <div className="rounded-2xl bg-rose-50 px-4 py-3 text-sm text-rose-700">
+                {error}
+              </div>
+            ) : null}
             <label className="flex items-center gap-2 text-xs text-slate-500">
               <input type="checkbox" className="h-4 w-4 rounded border-slate-300" />
               I agree to the Terms & Privacy policy.
             </label>
-            <Button className="w-full" variant="primary" type="submit">
-              Create account
+            <Button className="w-full" variant="primary" type="submit" disabled={isSubmitting}>
+              {isSubmitting ? "Creating account..." : "Create account"}
             </Button>
           </form>
           <p className="text-center text-sm text-slate-500">
