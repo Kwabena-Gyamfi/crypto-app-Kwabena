@@ -1,0 +1,43 @@
+﻿<svg width="560" height="560" viewBox="0 0 560 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="36" y="36" width="488" height="488" rx="56" fill="#FFFFFF" />
+  <rect x="40" y="40" width="480" height="480" rx="54" fill="none" stroke="#0A3ED1" stroke-width="12" />
+
+  <rect x="132" y="120" width="156" height="32" rx="16" fill="#E5E7EB" />
+  <circle cx="324" cy="136" r="12" fill="#F1F5F9" />
+  <circle cx="360" cy="136" r="12" fill="#F1F5F9" />
+  <circle cx="396" cy="136" r="12" fill="#F1F5F9" />
+
+  <text x="132" y="208" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#111827">$33,683.80</text>
+  <text x="132" y="236" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#16A34A">+ $131.36 (1.38%)</text>
+  <text x="252" y="236" font-family="Inter, Arial, sans-serif" font-size="14" fill="#6B7280">1D ></text>
+
+  <path d="M132 308C170 292 206 300 244 320C282 340 320 334 356 314C392 294 426 294 448 304" stroke="#3B82F6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M132 314C170 298 206 306 244 326C282 346 320 340 356 320C392 300 426 300 448 310" stroke="#DBEAFE" stroke-width="6" stroke-linecap="round" stroke-dasharray="1 8"/>
+  <circle cx="448" cy="304" r="9" fill="#FFFFFF" stroke="#3B82F6" stroke-width="4"/>
+
+  <g fill="#6B7280" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600">
+    <text x="152" y="362">1H</text>
+    <rect x="188" y="348" width="34" height="20" rx="10" fill="#EEF2FF"/>
+    <text x="199" y="362" fill="#1D4ED8">1D</text>
+    <text x="234" y="362">1W</text>
+    <text x="268" y="362">1M</text>
+    <text x="302" y="362">1Y</text>
+    <text x="336" y="362">ALL</text>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="14" fill="#111827" font-weight="600">
+    <circle cx="154" cy="404" r="16" fill="#F3F4F6"/>
+    <text x="184" y="409">Crypto</text>
+    <text x="404" y="409" font-weight="500">$14,186.12</text>
+
+    <circle cx="154" cy="442" r="16" fill="#F3F4F6"/>
+    <text x="184" y="447">Stocks</text>
+    <text x="404" y="447" font-weight="500">$8,133.98</text>
+
+    <circle cx="154" cy="480" r="16" fill="#F3F4F6"/>
+    <text x="184" y="485">Derivatives</text>
+    <text x="404" y="485" font-weight="500" fill="#16A34A">$148.84</text>
+  </g>
+
+</svg>
+
