@@ -82,9 +82,9 @@ export const tradeTabsData: Record<string, TrendingAsset[]> = {
 
 export const verificationApps: VerificationApp[] = [
   {
-    name: "Coinbase One Onchain Benefits",
+    name: "Crypto App One Onchain Benefits",
     desc: "Maximize savings and earn exclusive rewards onchain with Base, Aerodrome, and more.",
-    req: "Verified Coinbase One Membership",
+    req: "Verified Crypto App One Membership",
     btn: "Explore benefits",
     bg: "#000",
   },
@@ -97,7 +97,7 @@ export const verificationApps: VerificationApp[] = [
   },
   {
     name: "Verified Pools",
-    desc: "Get seamless access to transparent, verified liquidity pools—trade onchain with confidence with Coinbase.",
+    desc: "Get seamless access to transparent, verified liquidity pools—trade onchain with confidence with Crypto App.",
     req: "Verified account, Verified country",
     btn: "Use on Verified Pools",
     bg: "#e8eaf0",
@@ -132,21 +132,21 @@ export const verificationApps: VerificationApp[] = [
   },
   {
     name: "Talent Protocol",
-    desc: "Add your Coinbase Verification to Talent Passport to increase your Builder Score.",
+    desc: "Add your Crypto App Verification to Talent Passport to increase your Builder Score.",
     req: "Verified account",
     btn: "Use on Talent Protocol",
     bg: "#7c3aed",
   },
   {
     name: "DeForm",
-    desc: "Create or complete web3 signup forms, waitlists, and surveys while ensuring quality via Coinbase Verifications.",
+    desc: "Create or complete web3 signup forms, waitlists, and surveys while ensuring quality via Crypto App Verifications.",
     req: "Verified account",
     btn: "Use on DeForm",
     bg: "#fbbf24",
   },
   {
     name: "Perennial",
-    desc: "Trade perpetuals with leverage in a secure & compliant manner when you access Perennial markets as a Coinbase-verified user.",
+    desc: "Trade perpetuals with leverage in a secure & compliant manner when you access Perennial markets as a Crypto App-verified user.",
     req: "Verified account",
     btn: "Use on Perennial",
     bg: "#f8f8f8",
@@ -160,7 +160,7 @@ export const verificationApps: VerificationApp[] = [
   },
   {
     name: "Gitcoin",
-    desc: "Claim your Coinbase Stamp on Gitcoin Passport.",
+    desc: "Claim your Crypto App Stamp on Gitcoin Passport.",
     req: "Verified account",
     btn: "Use on Gitcoin",
     bg: "#fff",
@@ -175,7 +175,7 @@ export const verificationApps: VerificationApp[] = [
   },
   {
     name: "Index Coop",
-    desc: "Invest in exclusive markets and earn higher yield when you access Index Coop as a Coinbase-verified user.",
+    desc: "Invest in exclusive markets and earn higher yield when you access Index Coop as a Crypto App-verified user.",
     req: "Verified account",
     btn: "Coming soon",
     bg: "#e8eaf0",

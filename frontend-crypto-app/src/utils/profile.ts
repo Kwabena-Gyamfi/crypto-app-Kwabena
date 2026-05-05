@@ -3,7 +3,7 @@ export type Profile = {
   email?: string;
 };
 
-const STORAGE_KEY = "coinbaseCloneProfile";
+const STORAGE_KEY = "cryptoAppProfile";
 
 export const getProfile = (): Profile => {
   if (typeof window === "undefined") return {};

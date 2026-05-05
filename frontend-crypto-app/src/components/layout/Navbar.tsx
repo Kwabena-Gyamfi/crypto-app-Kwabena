@@ -105,7 +105,7 @@ function Navbar() {
   const individualProducts = [
     { title: "Buy and sell", description: "Buy, sell, and use crypto", icon: "C" },
     { title: "Base App", description: "Post, earn, trade, and chat, all in one place", icon: "B" },
-    { title: "Coinbase One", description: "Get zero trading fees and more", icon: "1" },
+    { title: "Crypto App Pro", description: "Get zero trading fees and more", icon: "1" },
     { title: "Private Client", description: "For trusts, family offices, UHNWIs", icon: "♦" },
     { title: "Onchain", description: "Explore onchain apps and experiences", icon: "◎" },
   ];
@@ -113,7 +113,7 @@ function Navbar() {
   const individualTools = [
     { title: "Advanced", description: "Professional-grade trading tools", icon: "↗" },
     { title: "Earn", description: "Stake your crypto and earn rewards", icon: "%" },
-    { title: "Coinbase Wealth", description: "Institutional-grade services for UHNW", icon: "◆" },
+    { title: "Crypto App Wealth", description: "Institutional-grade services for UHNW", icon: "◆" },
     { title: "Credit Card", description: "Earn up to 4% bitcoin back", icon: "▦" },
     {
       title: "Debit Card",
@@ -140,7 +140,7 @@ function Navbar() {
     },
     {
       title: "Asset Listings",
-      description: "List your asset on Coinbase",
+      description: "List your asset on Crypto App",
       icon: (
         <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <circle cx="12" cy="12" r="4" strokeWidth={1.6} />
@@ -292,7 +292,7 @@ function Navbar() {
     },
     {
       title: "Stablecoins",
-      description: "Access USDC and Coinbase Custom Stablecoins",
+      description: "Access USDC and Crypto App Custom Stablecoins",
       icon: (
         <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <circle cx="12" cy="12" r="9" strokeWidth={1.6} />
@@ -356,7 +356,7 @@ function Navbar() {
     },
     {
       title: "Blog",
-      description: "Read the latest from Coinbase",
+      description: "Read the latest from Crypto App",
       icon: (
         <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <rect x="5" y="4" width="14" height="16" rx="2" strokeWidth={1.6} />
@@ -402,8 +402,8 @@ function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white">
       <Container className="flex h-16 items-center justify-between gap-6">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logoMark} alt="Coinbase logo" className="h-8 w-8" />
-          <span className="text-base font-semibold text-[#0052ff]">coinbase</span>
+          <img src={logoMark} alt="Crypto App logo" className="h-8 w-8" />
+          <span className="text-base font-semibold text-[#0052ff]">crypto app</span>
         </Link>
 
         <nav className="hidden flex-1 items-center gap-6 lg:flex">
@@ -653,7 +653,7 @@ function Navbar() {
                       System Update 2025
                     </p>
                     <p className="text-sm text-slate-500">
-                      The next chapter of Coinbase. Live on X 12/17.
+                      The next chapter of Crypto App. Live on X 12/17.
                     </p>
                     <button className="mt-3 text-sm font-semibold text-blue-600" type="button">
                       Learn more
@@ -809,7 +809,7 @@ function Navbar() {
             <div className="grid gap-10 lg:grid-cols-[1fr_1fr_1.1fr]">
               <div className="space-y-5">
                 <div className="flex items-center gap-2 text-sm font-semibold text-slate-900">
-                  <span>Coinbase Developer Platform</span>
+                  <span>Crypto App Developer Platform</span>
                   <svg className="h-4 w-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -857,7 +857,7 @@ function Navbar() {
                       World class crypto infrastructure
                     </p>
                     <p className="text-sm text-slate-500">
-                      Discover Coinbase's complete crypto-as-a-service platform.
+                      Discover Crypto App's complete crypto-as-a-service platform.
                     </p>
                     <button className="mt-3 text-sm font-semibold text-blue-600" type="button">
                       Learn more
@@ -917,7 +917,7 @@ function Navbar() {
                   </div>
                   <div>
                     <p className="text-base font-semibold text-slate-900">
-                      Learn all about Coinbase
+                      Learn all about Crypto App
                     </p>
                     <p className="text-sm text-slate-500">
                       We're building the open financial system.

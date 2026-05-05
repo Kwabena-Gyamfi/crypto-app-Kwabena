@@ -25,7 +25,7 @@ function Footer() {
         <Container className="grid gap-10 lg:grid-cols-[1.4fr_repeat(3,minmax(0,1fr))]">
           <div className="space-y-4">
             <Link to="/" className="text-lg font-semibold text-[#0052ff]">
-              coinbase
+              crypto app
             </Link>
             <p className="text-sm text-slate-600">
               The trusted platform for buying, selling, and managing crypto.
